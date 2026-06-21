@@ -1,22 +1,18 @@
 # Red Neuronal con Python + Streamlit
 
-Proyecto de la **Opción 2** de la práctica de Redes Neuronales Artificiales. Incluye entrenamiento en Python, comparación entre RNA y Gradient Boosted Trees, aplicación Streamlit, capturas, resultados e informe.
+Proyecto de la **Opción 2** de la práctica de Redes Neuronales Artificiales. Este repositorio queda preparado para ejecutar una app de Streamlit que predice riesgo de diabetes usando una RNA y compara el enfoque con Gradient Boosted Trees.
 
-## Contenido
+## Contenido del repositorio
 
-- `01_entrenamiento.ipynb`: notebook ejecutado con carga de datos, correlación, entrenamiento, comparación de modelos, matrices de confusión y desafíos.
-- `app.py`: aplicación Streamlit funcional.
-- `diabetes_data_es_GOLD.csv`: dataset usado.
-- `modelo_rna.keras`: modelo RNA guardado.
-- `modelo_rna_sklearn.pkl`: respaldo del modelo para ejecutar la app sin TensorFlow.
-- `modelo_gbt.pkl`: modelo Gradient Boosted Trees.
-- `scaler.pkl`: normalizador usado antes de predecir.
-- `requirements.txt`: dependencias.
-- `informe_opcion2_RNA_Diabetes.pdf`: informe final.
-- `capturas/`: capturas requeridas.
-- `resultados/`: tablas de métricas, correlación, importancia de variables y desafíos.
+- `app.py`: aplicación Streamlit lista para desplegar.
+- `01_entrenamiento.ipynb`: notebook de entrenamiento y comparación de modelos.
+- `diabetes_data_es_GOLD.csv`: dataset para que la app pueda entrenar y ejecutarse en Streamlit Cloud.
+- `requirements.txt`: dependencias necesarias.
+- `URL_Streamlit.txt`: espacio para pegar la URL pública luego del deploy.
+- `resultados/`: tablas CSV con métricas, correlación, importancia de variables y desafíos.
+- `README_INSTRUCCIONES.txt`: pasos de ejecución y publicación.
 
-## Resultados base
+## Resultados base del informe original
 
 | Modelo | Accuracy | F1 | AUC |
 |---|---:|---:|---:|
@@ -30,12 +26,13 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Publicación en Streamlit Cloud
+## Publicar en Streamlit Cloud
 
 1. Entrar a Streamlit Cloud.
 2. Crear una nueva app.
 3. Seleccionar este repositorio.
 4. Elegir `app.py` como archivo principal.
 5. Presionar **Deploy**.
+6. Copiar la URL pública en `URL_Streamlit.txt` y en el informe.
 
-> La URL pública debe copiarse en `URL_Streamlit.txt` y también colocarse en el informe antes de entregar.
+> Nota: los archivos binarios grandes, capturas e informe PDF completo están en el ZIP generado fuera del repositorio. Este repositorio contiene la versión necesaria para ejecutar y desplegar la app.
