@@ -1,0 +1,11 @@
+Experimento / Variante,train_acc / val_acc,test_acc / F1 / AUC,Observación
+"Base RNA: [32,16], 80/20",0.9663 / 0.9365,0.9423 / 0.9516 / 0.9953,Referencia; buen AUC y accuracy estable.
+"Desafío 1a: [64,32,16]",0.9712 / 0.9841,0.9615 / 0.9683 / 0.9957,Convergió en 29 iteraciones; más capacidad no garantiza mejor test.
+"Desafío 1b: [128,64,32,16]",0.9880 / 0.9683,0.9712 / 0.9764 / 0.9980,Convergió en 27 iteraciones; más capacidad no garantiza mejor test.
+Desafío 2a: Partición 50/50,0.8885 / 0.8718,0.8615 / 0.8909 / 0.9397,Menos datos de entrenamiento; métrica más representativa que 95/5.
+Desafío 2b: Partición 95/5,0.9413 / 0.9733,0.9615 / 0.9677 / 1.0000,Test muy pequeño reduce confiabilidad.
+Desafío 3a: GBT 10 árboles,0.9808 / -,0.9808 / 0.9841 / 0.9891,Tiempo aprox. 0.03s; comparar mejora vs costo.
+Desafío 3b: GBT 500 árboles,1.0000 / -,0.9904 / 0.9921 / 1.0000,Mejora mínima; más árboles aumenta costo.
+Desafío 4a: GBT lr=0.001,0.8500 / -,0.8365 / 0.8837 / 0.9891,Learning rate muy bajo aprende lento.
+Desafío 4b: GBT lr=1.0,1.0000 / -,0.9904 / 0.9921 / 0.9941,Alto lr puede sobreajustar aunque aquí mantiene buen test.
+Desafío 5: Sin Poliuria,0.9327 / 0.9524,0.9038 / 0.9231 / 0.9625,Poliuria es una de las variables más influyentes.
