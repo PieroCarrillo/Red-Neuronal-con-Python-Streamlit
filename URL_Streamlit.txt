@@ -1,0 +1,6 @@
+URL pública Streamlit Cloud:
+
+Pega aquí la URL generada después de desplegar en Streamlit Cloud.
+Ejemplo de formato: https://usuario-diabetes-rna.streamlit.app
+
+No se pudo crear una URL pública automáticamente desde este entorno porque requiere iniciar sesión en GitHub y Streamlit Cloud.
